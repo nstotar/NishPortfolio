@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/NishPortfolio/static/css/main.ad698b34.css",
-    "main.js": "/NishPortfolio/static/js/main.e1ed5a32.js",
+    "main.css": "/NishPortfolio/static/css/main.a0556b21.css",
+    "main.js": "/NishPortfolio/static/js/main.24f960e2.js",
     "static/js/841.f8fbcf0a.chunk.js": "/NishPortfolio/static/js/841.f8fbcf0a.chunk.js",
+    "static/media/image.png": "/NishPortfolio/static/media/image.6af7e05a9a1b2c9f8203.png",
+    "static/media/cricket.jpg": "/NishPortfolio/static/media/cricket.1bc2ad8e2b09e15a8df6.jpg",
     "static/media/NishProfile.jpg": "/NishPortfolio/static/media/NishProfile.98582033cbb33b0817bf.jpg",
     "index.html": "/NishPortfolio/index.html",
-    "main.ad698b34.css.map": "/NishPortfolio/static/css/main.ad698b34.css.map",
-    "main.e1ed5a32.js.map": "/NishPortfolio/static/js/main.e1ed5a32.js.map",
+    "main.a0556b21.css.map": "/NishPortfolio/static/css/main.a0556b21.css.map",
+    "main.24f960e2.js.map": "/NishPortfolio/static/js/main.24f960e2.js.map",
     "841.f8fbcf0a.chunk.js.map": "/NishPortfolio/static/js/841.f8fbcf0a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad698b34.css",
-    "static/js/main.e1ed5a32.js"
+    "static/css/main.a0556b21.css",
+    "static/js/main.24f960e2.js"
   ]
 }
