@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
-// import { FaLinkedin, FaGithub, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import  ProfilePic from "./assets/NishProfile.jpg";
 import Header from "./components/Header";
 import Education from "./components/Education";
