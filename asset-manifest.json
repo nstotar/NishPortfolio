@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ad698b34.css",
-    "main.js": "/portfolio/static/js/main.cda4953e.js",
-    "static/js/841.f8fbcf0a.chunk.js": "/portfolio/static/js/841.f8fbcf0a.chunk.js",
-    "static/media/NishProfile.jpg": "/portfolio/static/media/NishProfile.98582033cbb33b0817bf.jpg",
-    "index.html": "/portfolio/index.html",
-    "main.ad698b34.css.map": "/portfolio/static/css/main.ad698b34.css.map",
-    "main.cda4953e.js.map": "/portfolio/static/js/main.cda4953e.js.map",
-    "841.f8fbcf0a.chunk.js.map": "/portfolio/static/js/841.f8fbcf0a.chunk.js.map"
+    "main.css": "/NishPortfolio/static/css/main.ad698b34.css",
+    "main.js": "/NishPortfolio/static/js/main.e1ed5a32.js",
+    "static/js/841.f8fbcf0a.chunk.js": "/NishPortfolio/static/js/841.f8fbcf0a.chunk.js",
+    "static/media/NishProfile.jpg": "/NishPortfolio/static/media/NishProfile.98582033cbb33b0817bf.jpg",
+    "index.html": "/NishPortfolio/index.html",
+    "main.ad698b34.css.map": "/NishPortfolio/static/css/main.ad698b34.css.map",
+    "main.e1ed5a32.js.map": "/NishPortfolio/static/js/main.e1ed5a32.js.map",
+    "841.f8fbcf0a.chunk.js.map": "/NishPortfolio/static/js/841.f8fbcf0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad698b34.css",
-    "static/js/main.cda4953e.js"
+    "static/js/main.e1ed5a32.js"
   ]
 }
