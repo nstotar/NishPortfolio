@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
@@ -8,66 +8,114 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  // Detect screen size changes
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
-      if (window.innerWidth >= 768) {
-        setMenuOpen(false);
-      }
+      if (window.innerWidth >= 768) setMenuOpen(false);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <header className="bg-blue-600 text-white p-4 relative">
-      {/* Logo */}
-      <h1 className="text-2xl md:text-3xl font-bold text-center">Nishant Totar <br /> Portfolio</h1>
-      
-      {/* Mobile Menu Button */}
-      {isMobile && (
-        <button
-          className="absolute top-4 right-4 text-white text-2xl z-50"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      )}
+    <motion.header 
+      className="relative bg-gray-950 border-b border-gray-800 py-4"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <motion.h1 
+            className="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
+            whileHover={{ scale: 1.05 }}
+          >
+            Nishant Totar
+          </motion.h1>
 
-      {/* Navigation Menu */}
-      <nav
-        className={`${
-          isMobile
-            ? `absolute top-full left-0 w-full bg-gray-800 p-4 flex flex-col items-center transition-all duration-300 ${menuOpen ? "opacity-100 visible" : "opacity-0 invisible"}`
-            : "flex justify-center"
-        }`}
-      >
-        <ul className={`${isMobile ? "flex flex-col w-2/3 text-center" : "flex justify-center bg-gray-800 rounded-lg"}`}>
-          {[
-            { path: "/", label: "Home" },
-            { path: "/skills", label: "Skills" },
-            { path: "/education", label: "Education" },
-            { path: "/projects", label: "Projects" },
-            { path: "/contact", label: "Contact" }
-          ].map((item) => (
-            <li
-              key={item.path}
-              className={`m-2 px-4 py-2 text-sm font-medium rounded-md w-full ${
-                location.pathname === item.path
-                  ? "bg-gray-50 text-gray-600 ring-1 ring-gray-500/10"
-                  : "text-white"
-              }`}
-              onClick={() => setMenuOpen(false)}
+          {/* Desktop Navigation */}
+          {!isMobile && (
+            <nav className="flex items-center gap-6">
+              {[
+                { path: "/", label: "Home" },
+                { path: "/skills", label: "Skills" },
+                { path: "/education", label: "Education" },
+                { path: "/projects", label: "Projects" },
+                { path: "/contact", label: "Contact" }
+              ].map((item) => (
+                <motion.div
+                  key={item.path}
+                  whileHover={{ scale: 1.05 }}
+                  className="relative"
+                >
+                  <Link
+                    to={item.path}
+                    className={`px-3 py-2 text-sm ${
+                      location.pathname === item.path
+                        ? "text-purple-400"
+                        : "text-gray-300 hover:text-white"
+                    } transition-colors`}
+                  >
+                    {item.label}
+                  </Link>
+                  {location.pathname === item.path && (
+                    <motion.div 
+                      className="absolute bottom-0 left-0 w-full h-px bg-purple-400"
+                      layoutId="underline"
+                    />
+                  )}
+                </motion.div>
+              ))}
+            </nav>
+          )}
+
+          {/* Mobile Menu Button */}
+          {isMobile && (
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-gray-300 hover:text-white p-2"
+              onClick={() => setMenuOpen(!menuOpen)}
             >
-              <Link to={item.path} className="hover:underline block w-full">
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+              {menuOpen ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
+            </motion.button>
+          )}
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobile && menuOpen && (
+          <motion.nav
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="mt-4 border-t border-gray-800 pt-4"
+          >
+            <div className="flex flex-col gap-2">
+              {[
+                { path: "/", label: "Home" },
+                { path: "/skills", label: "Skills" },
+                { path: "/education", label: "Education" },
+                { path: "/projects", label: "Projects" },
+                { path: "/contact", label: "Contact" }
+              ].map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`px-4 py-2 text-sm ${
+                    location.pathname === item.path
+                      ? "text-purple-400 bg-gray-900"
+                      : "text-gray-300 hover:bg-gray-900"
+                  } rounded-lg transition-colors`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </motion.nav>
+        )}
+      </div>
+    </motion.header>
   );
 };
 
