@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/NishPortfolio/static/css/main.3cb0863b.css",
-    "main.js": "/NishPortfolio/static/js/main.9cec9072.js",
+    "main.js": "/NishPortfolio/static/js/main.6261742a.js",
     "static/js/841.f8fbcf0a.chunk.js": "/NishPortfolio/static/js/841.f8fbcf0a.chunk.js",
     "static/media/image.png": "/NishPortfolio/static/media/image.6af7e05a9a1b2c9f8203.png",
     "static/media/cricket.jpg": "/NishPortfolio/static/media/cricket.1bc2ad8e2b09e15a8df6.jpg",
     "static/media/NishProfile.jpg": "/NishPortfolio/static/media/NishProfile.98582033cbb33b0817bf.jpg",
     "index.html": "/NishPortfolio/index.html",
     "main.3cb0863b.css.map": "/NishPortfolio/static/css/main.3cb0863b.css.map",
-    "main.9cec9072.js.map": "/NishPortfolio/static/js/main.9cec9072.js.map",
+    "main.6261742a.js.map": "/NishPortfolio/static/js/main.6261742a.js.map",
     "841.f8fbcf0a.chunk.js.map": "/NishPortfolio/static/js/841.f8fbcf0a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cb0863b.css",
-    "static/js/main.9cec9072.js"
+    "static/js/main.6261742a.js"
   ]
 }
