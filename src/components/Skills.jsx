@@ -16,27 +16,27 @@ const Skills = () => {
       category: "Core Technologies",
       icon: <FaReact className="text-3xl text-purple-400" />,
       items: [
-        { name: "Python", level: 90, icon: <FaPython /> },
-        { name: "Java", level: 85, icon: <FaJava /> },
-        { name: "React", level: 65, icon: <FaReact /> }
+        { name: "Python", level: 65, icon: <FaPython /> },
+        { name: "Java", level: 60, icon: <FaJava /> },
+        { name: "React", level: 50, icon: <FaReact /> }
       ]
     },
     {
       category: "Web Stack",
       icon: <SiTailwindcss className="text-3xl text-purple-400" />,
       items: [
-        { name: "HTML/CSS", level: 98 },
-        { name: "Tailwind CSS", level: 95, icon: <SiTailwindcss /> },
-        { name: "MySQL", level: 88, icon: <SiMysql /> }
+        { name: "HTML/CSS", level: 70 },
+        { name: "Tailwind CSS", level: 60, icon: <SiTailwindcss /> },
+        { name: "MySQL", level: 75, icon: <SiMysql /> }
       ]
     },
     {
       category: "Tools & Frameworks",
       icon: <SiDjango className="text-3xl text-purple-400" />,
       items: [
-        { name: "Django", level: 92, icon: <SiDjango /> },
-        { name: "Figma", level: 85, icon: <FaFigma /> },
-        { name: "Canva", level: 78, icon: <SiCanva /> }
+        { name: "Django", level: 60, icon: <SiDjango /> },
+        { name: "Figma", level: 60, icon: <FaFigma /> },
+        { name: "Canva", level: 60, icon: <SiCanva /> }
       ]
     }
   ];
