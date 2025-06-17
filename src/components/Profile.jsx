@@ -36,7 +36,7 @@ const Profile = () => {
               <FaTimes className="text-3xl" />
             </button>
             <iframe 
-              src="https://drive.google.com/file/d/1AZ0lhfW3KUeAHr0LfZ6yLfrPLIl6POMM/preview" 
+              src="https://drive.google.com/file/d/1qQwLx6LTqJ8EzMa9UuMOdJ0I66xkVhiQ/preview" 
               className="w-full h-full rounded-2xl"
               title="Resume Preview"
               allow="autoplay"
